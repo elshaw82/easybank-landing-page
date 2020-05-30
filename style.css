@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --dark-blue:hsl(233, 26%, 24%);
+    --lime-green:hsl(136, 65%, 51%);
+    --bright-cyan:hsl(192, 70%, 51%);
+    --grayish-blue:hsl(233, 8%, 62%);
+    --light-grayish-blue:hsl(220, 16%, 96%);
+    --light-gray:hsl(0,0%, 98%);
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size:16px;
+}
+
+.flex {
+    display:flex;
+}
+
+.navigation-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 100px 30px 100px;
+}
+
+button {
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    outline:none;
+    border:none;
+    border-radius: 40px;
+    width:200px;
+    padding:10px;
+    color:white;
+    font-weight:400;
+}
+
+nav a {
+    font-size: 18px;
+    color:var(--grayish-blue);
+    text-decoration: none;
+}
+
+header {
+    background-image: url(/images/bg-intro-desktop.svg);
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+
+}
+
+.title {
+    grid-template-columns: 1/5;
+    grid-row: 1/2;
+    
+}
+
+.item-1 {
+    grid-template-columns: 1/2;
+    grid-row: 2/3;
+}
+
+.item-2 {
+    grid-template-columns: 2/3;
+    grid-row: 2/3;
+
+}
+
+.item-3 {
+    grid-template-columns: 3/4;
+    grid-row: 2/3;
+}
+
+.item-4 {
+    grid-template-columns: 4/5;
+    grid-row: 2/3;
+}
